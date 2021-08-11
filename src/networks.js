@@ -34,9 +34,7 @@ exports.testnet = {
   wif: 0xef,
 };
 
-import * as bitcoin from 'bitcoinjs-lib';
-
-const COUNOSH = {
+exports.CounosH = {
     messagePrefix: '\x19CounosH Signed Message:\n',
     bech32: 'cch',
     bip32: {
@@ -47,11 +45,3 @@ const COUNOSH = {
     scriptHash: 0x64,
     wif: 0x6c,
 };
-const keyPair = bitcoin.ECPair.makeRandom({network: COUNOSH});
-const {address} = bitcoin.payments.p2sh({
-    redeem: bitcoin.payments.p2wpkh({pubkey: keyPair.publicKey, network: COUNOSH}),
-    network: COUNOSH,
-});
-console.log(address)
-const address2 = bitcoin.payments.p2wpkh({pubkey: keyPair.publicKey, network: COUNOSH});
-console.log(address2.address)
