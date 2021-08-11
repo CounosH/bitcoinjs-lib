@@ -34,7 +34,7 @@ exports.testnet = {
   wif: 0xef,
 };
 
-exports.CounosH = {
+exports.counosh = {
     messagePrefix: '\x19CounosH Signed Message:\n',
     bech32: 'cch',
     bip32: {
