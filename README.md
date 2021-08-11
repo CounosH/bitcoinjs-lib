@@ -85,7 +85,10 @@ Type declarations for Typescript are included in this library. Normal installati
 The below examples are implemented as integration tests, they should be very easy to understand.
 Otherwise, pull requests are appreciated.
 Some examples interact (via HTTPS) with a 3rd Party Blockchain Provider (3PBP).
-
+### Using with CounosH network
+``` bash
+bitcoin.networks.counosh;
+```
 - [Generate a random address](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/addresses.spec.ts)
 - [Import an address via WIF](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/addresses.spec.ts)
 - [Generate a 2-of-3 P2SH multisig address](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/addresses.spec.ts)
